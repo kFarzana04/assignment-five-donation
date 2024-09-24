@@ -23,7 +23,7 @@
             <div class="bg-[#F9F7F3] py-8">
                 <div class="navbar mx-auto w-11/12">
                     <div class="navbar-start">
-                        <button class="btn btn-natural bg-[#B4F461] px-8 text-xl font-bold">Blog</button>
+                        <button id="blog-button" class="btn btn-natural bg-[#B4F461] px-8 text-xl font-bold">Blog</button>
                     </div>
                     <div class="navbar-center text-3xl font-bold ">
                         <img src="./assets/logo.png" alt="">
@@ -31,29 +31,27 @@
                     </div>
                     <div class="navbar-end">
                       <img src="./assets/coin.png" alt="">
-                      <span class="text-black-500 text-lg font-bold">
-                        <span id="card1-amount">100000</span>BDT</span>
+                      <span id="target-amount" class="text-black-500 text-2xl font-bold mx-2">100000
+                        <span class="
+                        text-2xl font-semibold ">BDT</span></span>
                     </div>
                 </div>
             </div>
             <!--Navbar Ends-->
             <!--Sticky Menu Starts-->
             <div class="mx-auto w-11/12">
-            <div class="flex justify-center items-center h-50 mt-0 mb-10 pt-24 pb-10 ">
-                <ul class="flex text-lg font-bold fixed ">
-                    <li><a>
-                        <button id="btn-donation" class="btn border-spacing-1 bg-white mr-10 text-xl font-bold m-5 px-5">Donation</button>
-                    </a></li>
-                    <li><a>
-                        <button class="btn border-spacing-1 bg-white text-xl font-bold m-5 px-5">History</button>
-                    </a></li>
-                  </ul>
+            <div class="flex justify-center items-center h-50 mt-0 mb-10 pt-24 pb-10">
+                <div class="flex text-lg font-bold fixed z-10">  
+                    <button id="btn-donation" class="btn border-spacing-1 bg-white mr-10 text-xl font-bold m-5 px-5">Donation</button>
+                    <button id="btn-history" class="btn border-spacing-1 bg-white text-xl font-bold m-5 px-5">History</button>
+                </div>
             </div>
             </div>
+            <!--sticky menu ends-->
         </section>
     </header>
     <main>
-        <section>
+        <section id="Cards-section">
             <!-- 1st Card Starts-->
             <div class="mx-auto w-11/12 mb-28 border border-spacing-2 border-[
         #1111111A] ">
@@ -67,8 +65,8 @@
                     <div class="card-body">
                         <div class="flex">
                             <img src="./assets/coin.png" alt="">
-                            <span class="text-black-500 text-xl font-bold mx-3">
-                                <span id="card1-amount" class="mr-3">0</span>BDT</span>
+                            <span id="nokhali-donation-amount"  class="text-black-500 text-xl font-bold mx-3">0<span class="mr-3 text-xl font-bold">BDT</span></span>
+                                
                         </div>
                         <h2 class="card-title text-3xl">
                             Donate for Flood at Noakhali, Bangladesh
@@ -77,9 +75,9 @@
                             In 2024, Noakhali experienced severe flooding that has had a devastating impact on the region. Starting in August, heavy rainfall caused waterlogging in the district, which worsened throughout August and September. Over 2 million people were affected, with homes, roads, and marketplaces submerged in waist-deep water. The floods were exacerbated by clogged canals and wetlands, as illegal encroachments blocked the natural drainage of water.Eight upazilas, including Begumganj, Sadar, and Senbagh, have been hit the hardest. Many families were forced to seek shelter in schools and other public institutions, which disrupted daily life and education. 
                         </p>                   
                     <div>
-                        <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full py-8 text-2xl" />
+                        <input id="noakhali-donation-input" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full py-8 text-2xl" />
                     </div>
-                    <button onclick="my_modal_5.showModal()" class="btn w-full my-2 pb-14 pt-4 text-2xl font-bold bg-[#B4F461]">Donate Now</button>
+                    <button id="btn-modal" onclick="my_modal_5.showModal()" class="btn w-full my-2 pb-14 pt-4 text-2xl font-bold bg-[#B4F461]">Donate Now</button>
                     <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
                         <div class="modal-box content-center">
                           <h1 class="text-4xl font-bold mb-2">Congress!</h1>
@@ -102,18 +100,16 @@
             <!-- 2nd Card-->
             <div class="mx-auto w-11/12 mb-28 border border-spacing-2 border-[
                 #1111111A] ">
-                <div class="card lg:card-side bg-base-100 shadow-xl pt-8 pb-4 pl-6">
+                <div class="card lg:card-side bg-base-100 shadow-xl pt-6 pb-6 pl-6">
                 <div class="lg:w-1/2 w-full ">
-                    <figure>
-                        <img src="./assets/feni.png" alt="">
-                      </figure>
+                    <figure><img src="./assets/feni.png" alt=""></figure>
                 </div>
                 <div class="lg:w-1/2 w-full mb-4 ">
                     <div class="card-body">
                         <div class="flex">
                             <img src="./assets/coin.png" alt="">
-                            <span class="text-black-500 text-xl ml-3 font-bold">
-                                <span id="card1-amount" class="mr-3">0</span>BDT</span>
+                            <span id="feni-donation-amount" class="text-black-500 text-2xl ml-3 font-bold">0
+                                <span class="mr-3">BDT</span></span>
                         </div>
                         <h2 class="card-title text-3xl">
                             Donate for Flood Relief in Feni,Bangladesh
@@ -122,9 +118,9 @@
                             In 2024, Noakhali experienced severe flooding that has had a devastating impact on the region. Starting in August, heavy rainfall caused waterlogging in the district, which worsened throughout August and September. Over 2 million people were affected, with homes, roads, and marketplaces submerged in waist-deep water. The floods were exacerbated by clogged canals and wetlands, as illegal encroachments blocked the natural drainage of water.Eight upazilas, including Begumganj, Sadar, and Senbagh, have been hit the hardest. Many families were forced to seek shelter in schools and other public institutions, which disrupted daily life and education. 
                         </p>                   
                     <div>
-                        <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full py-8 text-2xl" />
+                        <input id="feni-donation-input" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full py-8 text-2xl" />
                     </div>
-                    <button onclick="my_modal_5.showModal()" class="btn w-full my-2 pb-14 pt-4 text-2xl font-bold bg-[#B4F461]">
+                    <button id="feni-donation-btn" onclick="my_modal_5.showModal()" class="btn w-full my-2 pb-14 pt-4 text-2xl font-bold bg-[#B4F461]">
                         Donate Now
                     </button>   
                 </div>
@@ -159,9 +155,9 @@
                                 Human rights organizations like Ain o Salish Kendra (ASK) and Bangladesh Legal Aid and Services Trust (BLAST) called for investigations into police actions and the excessive use of force. 
                             </p>                   
                         <div>
-                            <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full py-8 text-2xl" />
+                            <input id="input-donation" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full py-8 text-2xl" />
                         </div>
-                        <button onclick="my_modal_5.showModal()" class="btn w-full  my-2 pb-14 pt-4 text-2xl font-bold bg-[#B4F461]">
+                        <button id="btn-modal" onclick="my_modal_5.showModal()" class="btn w-full  my-2 pb-14 pt-4 text-2xl font-bold bg-[#B4F461]">
                          Donate Now
                         </button>   
                  </div>
@@ -170,7 +166,46 @@
             </div>
          <!--3rd Card ends-->       
         </section>
+        <!--History section start-->
+        <section id="history-section" class="hidden bg-gray-100 1-4/5 mx-auto">
+            <div class="container mx-auto">
+                <div class="card shadow-xl mb-4">
+                    <div class="card-body text-xl font-semibold">
+                        <ul id="history-list"></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Blog Section starts-->
+        <section id="blog-section" class="hidden" >
+            <div class="mx-auto w-11/12 mb-20">
+                <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border mb-24 bg-white shadow-lg">
+                    <div class="collapse-title text-xl font-medium">Focus me to see content</div>
+                    <div class="collapse-content">
+                      <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                    </div>
+                </div> 
+                <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border mb-24 bg-white shadow-lg">
+                    <div class="collapse-title text-xl font-medium">Focus me to see content</div>
+                    <div class="collapse-content">
+                      <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                    </div>
+                </div> 
+                <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border mb-24 bg-white shadow-lg">
+                    <div class="collapse-title text-xl font-medium">Focus me to see content</div>
+                    <div class="collapse-content">
+                      <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                    </div>
+                </div> 
+                <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border mb-24 bg-white shadow-lg">
+                    <div class="collapse-title text-xl font-medium">Focus me to see content</div>
+                    <div class="collapse-content">
+                      <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                    </div>
+                </div>     
+            </div>
+        </section>
     </main>
-  <script src="./js/script.js"></script>  
+    <script src="./js/script.js"></script>  
 </body>
 </html>
