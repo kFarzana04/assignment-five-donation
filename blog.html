@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Blog Page </title>
+
+    <!-- link of Daisy Ai and Tailwind-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lexend font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <!--Navbar Starts-->
+        <section>
+            <div class="bg-[#F9F7F3] py-8">
+                <div class="navbar mx-auto w-11/12">
+                    <div class="navbar-start">
+                        <button id="blog-button" class="btn btn-natural bg-[#B4F461] px-8 text-xl font-bold">Blog</button>
+                    </div>
+                    <div class="navbar-center text-3xl font-bold ">
+                        <img src="./assets/logo.png" alt="">
+                        <h2 class="ml-4">Donate Bangladesh</h2>
+                    </div>
+                    <div class="navbar-end">
+                      <img src="./assets/coin.png" alt="">
+                      <span id="target-amount" class="text-black-500 text-2xl font-bold mx-2">100000
+                        <span class="
+                        text-2xl font-semibold ">BDT</span></span>
+                    </div>
+                </div>
+            </div>
+            <!--Navbar Ends-->
+            <!--Sticky Menu Starts-->
+            <div class="mx-auto w-11/12">
+            <div class="flex justify-center items-center h-50 mt-0 mb-10 pt-24 pb-10">
+                <div class="flex text-lg font-bold">  
+                    <button id="btn-donation" class="btn border-spacing-1 bg-white mr-10 text-xl font-bold m-5 px-5">Donation</button>
+                    <button id="btn-history" class="btn border-spacing-1 bg-white text-xl font-bold m-5 px-5">History</button>
+                </div>
+            </div>
+            </div>
+            <!--sticky menu ends-->
+        </section>
+    </header>
+
+    <main>
+            <!--Blog Section starts-->
+        <section id="blog-section" >
+            <div class="mx-auto w-11/12 text-2xl font-medium p-10">
+                <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border mb-24 bg-white shadow-lg p-8">
+                    <div class="collapse-title font-medium"><h3 class="text-4xl">1. What is the Document Object Model (DOM)?</h3></div>
+                    <div class="collapse-content text-2xl font-medium ">
+                      <p>Answer: The Document Object Model (DOM) is programming interface for the web document that represent the structure of an HTML document. It allows programs and scrips to dynamically access and updates the content, structure and style od a web page.</p>
+                    </div>
+                </div> 
+                <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border mb-24 bg-white shadow-lg p-10">
+                    <div class="collapse-title text-xl font-medium"><h3 class="text-4xl">2. How do you select an element from the DOM?</h3></div>
+                    <div class="collapse-content">
+                      <p class="text-2xl font-medium">To select an element from the DOM (Document Object Model) in JavaScript, you can use various methods provided by the document object. Here are the most commonly used methods: <br><br>
+                        1.  <b> getElementById</b>: <br>
+                        2.  <b> getElementByClassName</b> <br>
+                        3. <b>getElementsByTagName</b> <br>
+                        4. <b>querySelector</b> <br>
+                        5. <b>querySelectorAll</b>
+                      </p>
+                    </div>
+                </div> 
+                <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border mb-24 bg-white shadow-lg p-10">
+                    <div class="collapse-title text-xl font-medium"><h3 class="text-4xl">3. What is event delegation in the context of the DOM, and why is it useful?</h3></div>
+                    <div class="collapse-content">
+                      <p class="text-2xl font-medium">Answer: Event delegation is a technique in JavaScript where you add a single event listener to a parent element instead of adding multiple event listeners to individual child elements. This technique takes advantage of the event bubbling (or event propagation) mechanism, where events triggered on child elements bubble up through their ancestors in the DOM. <br> <br>
+                        1. <b>How Event Delegation Works :</b>Event delegation is a technique in JavaScript where you add a single event listener to a parent element instead of adding multiple event listeners to individual child elements. <br><br>
+                            a. Event Bubbling : When an event occurs on an element, it first runs the handlers on that element (if any), and then the event propagates (bubbles) up to its parent elements.<br><br><br>
+                            b. Event Delegation : By placing an event listener on a common parent element, you can listen for events from its child elements without directly attaching listeners to each of <them class="br"></them> <br> <br>
+                        2. <b>Why Event Delegation Is Useful :</b> <br> <br>
+                            a. Efficiency: Instead of adding separate event listeners to each child element, you only need one event listener on the parent. This reduces memory usage and improves performance, especially when you have many child elements. <br> <br>
+                            b.Dynamic Elements: It’s very useful when dealing with dynamically added elements. If elements are added to the DOM after the initial event listeners are set up, they won’t have event listeners attached unless you use event delegation. <br> <br>
+                            c.Simplified Code: Managing a single event listener instead of many makes your code cleaner and easier to maintain.
+                      </p>
+                    </div>
+                </div> 
+                <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border mb-24 bg-white shadow-lg p-10">
+                    <div class="collapse-title text-xl font-medium"><h3 class="text-4xl">4. How do you manipulate an element's attributes and styles using the DOM?</h3></div>
+                    <div class="collapse-content">
+                      <p class="text-2xl font-medium">Answer:Manipulating an element's attributes and styles in the DOM is a fundamental aspect of working with HTML and JavaScript. Here’s how you can do it: <br>
+                        <b>1. Manipulating Attributes :</b> <br>
+                            a.Set Attribute <br>
+                            b. Get Attribute <br>
+                            c. Remove Attribute <br>
+                        <b>2. Manipulating Styles :</b> <br>
+                            a. Set Style <br>
+                            b. Get Style <br>
+                            c. Remove Style
+
+                      </p>
+                    </div>
+                </div>     
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

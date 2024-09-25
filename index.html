@@ -51,7 +51,7 @@
         </section>
     </header>
     <main>
-        <section id="Cards-section">
+        <section id="cards-section">
             <!-- 1st Card Starts-->
             <div class="mx-auto w-11/12 mb-28 border border-spacing-2 border-[
         #1111111A] ">
@@ -65,7 +65,9 @@
                     <div class="card-body">
                         <div class="flex">
                             <img src="./assets/coin.png" alt="">
-                            <span id="nokhali-donation-amount"  class="text-black-500 text-xl font-bold mx-3">0<span class="mr-3 text-xl font-bold">BDT</span></span>
+                            <span id="noakhali-donation-amount" class="text-black-500 text-2xl ml-3 font-bold">0
+                                <span class="mr-3">BDT</span>
+                            </span>
                                 
                         </div>
                         <h2 class="card-title text-3xl">
@@ -77,7 +79,7 @@
                     <div>
                         <input id="noakhali-donation-input" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full py-8 text-2xl" />
                     </div>
-                    <button id="btn-modal" onclick="my_modal_5.showModal()" class="btn w-full my-2 pb-14 pt-4 text-2xl font-bold bg-[#B4F461]">Donate Now</button>
+                    <button id="noakhali-donation-btn" onclick="my_modal_5.showModal()" class="btn w-full my-2 pb-14 pt-4 text-2xl font-bold bg-[#B4F461]">Donate Now</button>
                     <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
                         <div class="modal-box content-center">
                           <h1 class="text-4xl font-bold mb-2">Congress!</h1>
@@ -109,7 +111,8 @@
                         <div class="flex">
                             <img src="./assets/coin.png" alt="">
                             <span id="feni-donation-amount" class="text-black-500 text-2xl ml-3 font-bold">0
-                                <span class="mr-3">BDT</span></span>
+                                <span class="mr-3">BDT</span>
+                            </span>
                         </div>
                         <h2 class="card-title text-3xl">
                             Donate for Flood Relief in Feni,Bangladesh
@@ -141,13 +144,12 @@
                         <div class="card-body">
                             <div class="flex">
                                 <img  src="./assets/coin.png" alt="">
-                                <span class="text-black-500 text-xl ml-3 font-bold">
-                                    <span id="card1-amount" class="mr-3">
-                                        0
-                                    </span>BDT</span>
+                                <span id="quota-donation-amount" class="text-black-500 text-2xl ml-3 font-bold">0
+                                    <span class="mr-3">BDT</span>
+                                </span>
                             </div>
                             <h2 class="card-title text-3xl">
-                                Donate for Flood Relief in Feni,Bangladesh
+                                Aid for Injured in the Quota Movement
                             </h2>
                             <p class="text-2xl mb-3">
                                 The Quota Reform Movement in Bangladesh, which started in 2018, saw numerous protests demanding reforms in the government job quota system. During these demonstrations, several participants were injured in clashes with law enforcement agencies.
@@ -155,9 +157,9 @@
                                 Human rights organizations like Ain o Salish Kendra (ASK) and Bangladesh Legal Aid and Services Trust (BLAST) called for investigations into police actions and the excessive use of force. 
                             </p>                   
                         <div>
-                            <input id="input-donation" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full py-8 text-2xl" />
+                            <input id="quota-donation-input" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full py-8 text-2xl" />
                         </div>
-                        <button id="btn-modal" onclick="my_modal_5.showModal()" class="btn w-full  my-2 pb-14 pt-4 text-2xl font-bold bg-[#B4F461]">
+                        <button id="quota-donation-btn" onclick="my_modal_5.showModal()" class="btn w-full  my-2 pb-14 pt-4 text-2xl font-bold bg-[#B4F461]">
                          Donate Now
                         </button>   
                  </div>
@@ -167,45 +169,16 @@
          <!--3rd Card ends-->       
         </section>
         <!--History section start-->
-        <section id="history-section" class="hidden bg-gray-100 1-4/5 mx-auto">
+        <section id="history-section" class="hidden bg-white 1-4/5 mx-auto">
             <div class="container mx-auto">
-                <div class="card shadow-xl mb-4">
+                <div class="card shadow-xl mb-4 border border-spacing-1">
                     <div class="card-body text-xl font-semibold">
                         <ul id="history-list"></ul>
                     </div>
                 </div>
             </div>
         </section>
-        <!--Blog Section starts-->
-        <section id="blog-section" class="hidden" >
-            <div class="mx-auto w-11/12 mb-20">
-                <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border mb-24 bg-white shadow-lg">
-                    <div class="collapse-title text-xl font-medium">Focus me to see content</div>
-                    <div class="collapse-content">
-                      <p>tabindex="0" attribute is necessary to make the div focusable</p>
-                    </div>
-                </div> 
-                <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border mb-24 bg-white shadow-lg">
-                    <div class="collapse-title text-xl font-medium">Focus me to see content</div>
-                    <div class="collapse-content">
-                      <p>tabindex="0" attribute is necessary to make the div focusable</p>
-                    </div>
-                </div> 
-                <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border mb-24 bg-white shadow-lg">
-                    <div class="collapse-title text-xl font-medium">Focus me to see content</div>
-                    <div class="collapse-content">
-                      <p>tabindex="0" attribute is necessary to make the div focusable</p>
-                    </div>
-                </div> 
-                <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border mb-24 bg-white shadow-lg">
-                    <div class="collapse-title text-xl font-medium">Focus me to see content</div>
-                    <div class="collapse-content">
-                      <p>tabindex="0" attribute is necessary to make the div focusable</p>
-                    </div>
-                </div>     
-            </div>
-        </section>
     </main>
-    <script src="./js/script.js"></script>  
+    <script src="./js/back.js"></script>  
 </body>
 </html>
