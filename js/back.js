@@ -24,6 +24,26 @@ function handleHistoryClick() {
 donationBtn.addEventListener('click', handleDonationClick);
 historyBtn.addEventListener('click', handleHistoryClick);
 
+// Active button
+function setActiveButton(button) {
+	donationBtn.style.backgroundColor = '';
+	historyBtn.style.backgroundColor = '';
+	
+	//add active button
+button.style.backgroundColor = '#B4F461';	
+}
+// donation button active
+
+donationBtn.addEventListener('click', function(){
+	setActiveButton(donationBtn);
+});
+
+// history button active
+
+historyBtn.addEventListener('click', function(){
+	setActiveButton(historyBtn);
+});
+
 //Define target amount..
 
 let targetAmount = parseInt(document.getElementById('target-amount').textContent, 10);
