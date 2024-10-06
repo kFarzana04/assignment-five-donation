@@ -132,7 +132,7 @@ document.getElementById('feni-donation-btn').onclick = function () {
 };
 
 document.getElementById('quota-donation-btn').onclick = function () {
-    const donationInput = document.getElementById('quota-Donation-Input');
+    const donationInput = document.getElementById('quota-donation-input');
     const donationAmountElement = document.getElementById('quota-donation-amount');
     const modalElement = document.getElementById('my_modal_5');
 
@@ -140,10 +140,12 @@ document.getElementById('quota-donation-btn').onclick = function () {
         console.error('one or more element not found');
         return;
     }
-    const donationValue = inputElement.value.trim();
+    const donationValue = donationInput.value.trim();
     console.log('donationValue:', donationValue)
 
     handleDonation(donationInput, donationAmountElement, modalElement);
     addDonationToHistory(donationInput.value, 'Quota');
 };
+
+
 
